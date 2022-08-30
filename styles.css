@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.card {
+  width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card .image {
+  height: 14.5rem;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.card h2 {
+  padding: 2rem 2rem 0;
+  font-size: 1rem;
+  color: hsl(217, 19%, 35%);
+  line-height: 1.5;
+}
+
+.card p {
+  padding: 1rem 2rem 1.5rem;
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  line-height: 1.6;
+}
+
+.card .author {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem 1.5rem;
+}
+
+.card .author .photo {
+  margin-right: 1rem;
+}
+
+.card .author .photo img {
+  width: 2.5rem;
+  border-radius: 50%;
+}
+
+.card .author .info {
+  margin-right: 3.2rem;
+}
+
+.card .author .name {
+  color: hsl(217, 19%, 35%);
+  font-weight: 700;
+}
+
+.card .author .date {
+  color: hsl(212, 23%, 69%);
+}
+
+.card .author .share-icon {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+}
+
+.card .author .share-icon::before {
+  content: '';
+  mask: url('./images/icon-share.svg') no-repeat center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: -1px;
+  left: 1px;
+  background-color: hsl(214, 17%, 51%);
+}
+
+.card .footer .share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(217, 19%, 35%);
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 13px;
+  color: hsl(212, 23%, 69%);
+}
+
+.card .footer .share .socials {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.card .socials span {
+  margin-right: 1rem;
+}
+
+.card .footer .share .share-icon {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  background-color: hsl(214, 17%, 51%);
+  border-radius: 50%;
+}
+
+.card .footer .share .share-icon::before {
+  content: '';
+  mask: url('./images/icon-share.svg') no-repeat center;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: -1px;
+  left: 1px;
+  background-color: #fff;
+}
+
+.footer .share-icon:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+
+footer {
+  margin-top: 2rem;
+}
