@@ -143,10 +143,6 @@ img {
   background-color: #fff;
 }
 
-.footer .share-icon:hover {
-  cursor: pointer;
-}
-
 .hidden {
   display: none !important;
 }
@@ -158,5 +154,73 @@ footer {
 @media (min-width: 1440px) {
   .card {
     display: flex;
+    width: 750px;
+    padding-right: 1rem;
+    overflow: unset;
+  }
+
+  .card .image {
+    height: 306px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .card .image img {
+    height: 100%;
+    width: auto;
+  }
+
+  .card .content {
+    padding-left: 0.5rem;
+  }
+
+  .card .footer .info {
+    margin-right: 9rem;
+  }
+
+  .footer .share-icon:hover {
+    cursor: pointer;
+  }
+
+  .card h2 {
+    font-size: 1.3rem;
+  }
+
+  .card .footer .share {
+    width: 16rem;
+    height: 3.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    border-radius: 10px;
+    right: -5rem;
+    bottom: 5.5rem;
+  }
+
+  .card .footer .share::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    background-color: hsl(217, 19%, 35%);
+    bottom: -0.5rem;
+    transform: rotate(45deg);
+  }
+
+  .card .footer .share span {
+    margin-right: 1rem;
+  }
+
+  .card .footer .share .socials {
+    margin: 0;
+  }
+
+  .card .footer .share .socials .pinterest {
+    margin: 0;
+  }
+
+  .card .footer .share .share-icon {
+    position: absolute;
+    bottom: -3.6rem;
   }
 }
