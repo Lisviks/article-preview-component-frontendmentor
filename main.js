@@ -4,12 +4,10 @@ const shareIcons = document.querySelectorAll('.share-icon');
 
 shareIcons.forEach((icon) => {
   icon.addEventListener('click', () => {
-    if (authorElement.classList.contains('hidden')) {
-      authorElement.classList.remove('hidden');
-      shareElement.classList.add('hidden');
-    } else {
-      authorElement.classList.add('hidden');
+    if (shareElement.classList.contains('hidden')) {
       shareElement.classList.remove('hidden');
+    } else {
+      shareElement.classList.add('hidden');
     }
   });
 });
