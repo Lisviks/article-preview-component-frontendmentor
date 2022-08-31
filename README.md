@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [URL]()
+- Solution URL: [URL](https://www.frontendmentor.io/solutions/article-preview-component-4eokICoZWj)
 - Live Site URL: [URL](https://lisviks.github.io/article-preview-component-frontendmentor/)
 
 ## My process
